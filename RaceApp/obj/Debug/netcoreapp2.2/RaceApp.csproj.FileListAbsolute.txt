@@ -1,0 +1,11 @@
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\bin\Debug\netcoreapp2.2\RaceApp.deps.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\bin\Debug\netcoreapp2.2\RaceApp.runtimeconfig.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\bin\Debug\netcoreapp2.2\RaceApp.runtimeconfig.dev.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\bin\Debug\netcoreapp2.2\RaceApp.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\bin\Debug\netcoreapp2.2\RaceApp.pdb
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.csprojAssemblyReference.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.csproj.CoreCompileInputs.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.AssemblyInfoInputs.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.AssemblyInfo.cs
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp\obj\Debug\netcoreapp2.2\RaceApp.pdb

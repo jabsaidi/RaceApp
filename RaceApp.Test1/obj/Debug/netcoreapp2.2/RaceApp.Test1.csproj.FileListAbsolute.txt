@@ -1,0 +1,17 @@
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.Test1.deps.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.Test1.runtimeconfig.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.Test1.runtimeconfig.dev.json
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.Test1.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.Test1.pdb
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\bin\Debug\netcoreapp2.2\RaceApp.pdb
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.csprojAssemblyReference.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.csproj.CoreCompileInputs.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.AssemblyInfoInputs.cache
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.AssemblyInfo.cs
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.csproj.CopyComplete
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.dll
+C:\Users\jabir.saidi\source\repos\RaceApp\RaceApp.Test1\obj\Debug\netcoreapp2.2\RaceApp.Test1.pdb
