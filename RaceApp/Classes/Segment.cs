@@ -15,7 +15,7 @@ namespace RaceApp.Classes
             int length = random.Generate(25, 100);
             TrackSegment = segment;
             Ground = groundType;
-            Length = LengthProvider(length);
+            Length = length;
         }
 
         public void RaceLogs(Segment segment, Driver driver)
@@ -23,11 +23,6 @@ namespace RaceApp.Classes
             Console.WriteLine($"\n{segment.TrackSegment}...");
             if (segment.TrackSegment == "S turn")
                 driver.DriftControl(driver, segment);
-        }
-
-        public int LengthProvider(int length)
-        {
-            return length;
         }
     }
 }
