@@ -39,42 +39,21 @@ namespace RaceApp.Classes
 
             int currSpeed = driver.Speed;
             int tempSpeed;
-            if (IsSand(segment.Ground))
-            {
-                currSpeed -= random.Generate(90, 100);
 
-                if (IsCurve(segment.TrackSegment))
-                {
-                    tempSpeed = currSpeed - random.Generate(10, 20);
-                    SegmentTimeCalculator(tempSpeed, segment, driver);
-                }
-                else if (IsLine(segment.TrackSegment))
-                {
-                    SegmentTimeCalculator(currSpeed, segment, driver);
-                }
-                else if (IsSTurn(segment.TrackSegment))
-                {
-                    tempSpeed = currSpeed - random.Generate(10, 30);
-                    SegmentTimeCalculator(tempSpeed, segment, driver);
-                }
-            }
-            else
+            if (IsCurve(segment.TrackSegment))
             {
-                if (IsCurve(segment.TrackSegment))
-                {
-                    tempSpeed = currSpeed - random.Generate(10, 20);
-                    SegmentTimeCalculator(tempSpeed, segment, driver);
-                }
-                else if (IsLine(segment.TrackSegment))
-                {
-                    tempSpeed = currSpeed + random.Generate(10, 50);
-                    SegmentTimeCalculator(tempSpeed, segment, driver);
-                }
-                else if (IsSTurn(segment.TrackSegment))
-                {
-                    tempSpeed = currSpeed - random.Generate(40, 55);
-                    SegmentTimeCalculator(tempSpeed, segment, driver);
-                }
+                tempSpeed = currSpeed - random.Generate(10, 20);
+                SegmentTimeCalculator(tempSpeed, segment, driver);
+            }
+            else if (IsLine(segment.TrackSegment))
+            {
+                tempSpeed = currSpeed + random.Generate(20, 60);
+                SegmentTimeCalculator(tempSpeed, segment, driver);
+            }
+            else if (IsSTurn(segment.TrackSegment))
+            {
+                tempSpeed = currSpeed - random.Generate(10, 30);
+                SegmentTimeCalculator(tempSpeed, segment, driver);
             }
         }
     }

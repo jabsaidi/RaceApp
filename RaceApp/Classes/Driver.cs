@@ -64,8 +64,8 @@ namespace RaceApp.Classes
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"\n{driver.Name} lost control and will have to drive through the {segment.Ground} {segment.TrackSegment} again.");
                 Console.ForegroundColor = ConsoleColor.Gray;
+
                 driver.DrivenSegments.Add(segment);
-                //ajouter le temps de parcour du segment encore
                 SegmentTimeCalculator(driver.Speed, segment, driver);
             }
         }
@@ -117,7 +117,7 @@ namespace RaceApp.Classes
 
         public void SegmentTimeCalculator(int speed, Segment segment, Driver driver)
         {
-            int time = 0;
+            int time;
             int distance = segment.Length;
 
             time = (distance * 60) / speed;

@@ -14,7 +14,7 @@ namespace RaceApp.Classes
 
         public void Participants()
         {
-            Console.WriteLine("                         How many drivers?                            *Has to be at least 2");
+            Console.WriteLine("                         How many drivers do you want?                         *Has to be at least 2");
             int racers = Convert.ToInt32(Console.ReadLine());
             if (racers < 2)
                 NotEnough();
@@ -68,7 +68,7 @@ namespace RaceApp.Classes
                     driver.PointsCalculator(driver, segment);
                     driver.SpeedCalculator(driver, segment, weather);
                     segment.RaceLogs(segment, driver);
-                    Wait(1500);
+                    Wait(1100);
                 }
             }
             Chrono(drivers);
@@ -116,7 +116,7 @@ namespace RaceApp.Classes
             int j = 1;
             foreach (var driver in rank)
             {
-                Console.WriteLine($"{j} : {driver.Name} - Time : {driver.TotalTime}");
+                Console.WriteLine($"{j} : {driver.Name} | Time : {driver.TotalTime}");
                 Console.WriteLine("__________________________");
                 j++;
             }
