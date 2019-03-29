@@ -12,7 +12,6 @@ namespace RaceApp.Classes
         public string Name { get; set; }
         public int TotalTime { get; set; }
         public int Performence { get; set; }
-        RandomGenerator random = new RandomGenerator();
         List<Endorser> EndorsersList = new List<Endorser>();
         public List<int> TimeSpentOnSegment = new List<int>();
         public List<Segment> DrivenSegments = new List<Segment>();
@@ -23,7 +22,7 @@ namespace RaceApp.Classes
             Name = name;
             Speed = speed;
             Performence = performence;
-            int totalEndorsers = random.Generate(1, 6);
+            int totalEndorsers = RandomGenerator.Generate(1, 6);
             EndorsersList = Endrosers(totalEndorsers);
         }
 
@@ -32,7 +31,7 @@ namespace RaceApp.Classes
             int i = 0;
             while (i < totalEndorsers)
             {
-                string name = random.EndorserName();
+                string name = RandomGenerator.EndorserName();
                 EndorsersList.Add(new Endorser(name));
                 i++;
             }
@@ -58,7 +57,7 @@ namespace RaceApp.Classes
 
         public virtual void DriftControl(Driver driver, Segment segment, int chances = 2)
         {
-            int odds = random.Generate(1, chances);
+            int odds = RandomGenerator.Generate(1, chances);
             if (odds == 1)
             {
                 Console.ForegroundColor = ConsoleColor.Red;

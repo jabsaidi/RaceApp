@@ -5,8 +5,6 @@ namespace RaceApp.Classes
 {
     public class Rally : Driver
     {
-        RandomGenerator random = new RandomGenerator();
-
         public Rally(string name, string car, int performence, int speed = 180) : base(name, car, performence, speed)
         {
         }
@@ -81,11 +79,11 @@ namespace RaceApp.Classes
             int tempSpeed;
             if (IsSand(segment.Ground))
             {
-                currSpeed -= random.Generate(50, 70);
+                currSpeed -= RandomGenerator.Generate(50, 70);
 
                 if (IsCurve(segment.TrackSegment))
                 {
-                    tempSpeed = currSpeed - random.Generate(10, 20);
+                    tempSpeed = currSpeed - RandomGenerator.Generate(10, 20);
                     SegmentTimeCalculator(tempSpeed, segment, driver);
                 }
                 else if (IsLine(segment.TrackSegment))
@@ -94,7 +92,7 @@ namespace RaceApp.Classes
                 }
                 else if (IsSTurn(segment.TrackSegment))
                 {
-                    tempSpeed = currSpeed - random.Generate(10, 30);
+                    tempSpeed = currSpeed - RandomGenerator.Generate(10, 30);
                     SegmentTimeCalculator(tempSpeed, segment, driver);
                 }
             }
@@ -102,17 +100,17 @@ namespace RaceApp.Classes
             {
                 if (IsCurve(segment.TrackSegment))
                 {
-                    tempSpeed = currSpeed - random.Generate(10, 20);
+                    tempSpeed = currSpeed - RandomGenerator.Generate(10, 20);
                     SegmentTimeCalculator(tempSpeed, segment, driver);
                 }
                 else if (IsLine(segment.TrackSegment))
                 {
-                    tempSpeed = currSpeed + random.Generate(10, 50);
+                    tempSpeed = currSpeed + RandomGenerator.Generate(10, 50);
                     SegmentTimeCalculator(tempSpeed, segment, driver);
                 }
                 else if (IsSTurn(segment.TrackSegment))
                 {
-                    tempSpeed = currSpeed - random.Generate(100, 120);
+                    tempSpeed = currSpeed - RandomGenerator.Generate(100, 120);
                     SegmentTimeCalculator(tempSpeed, segment, driver);
                 }
             }

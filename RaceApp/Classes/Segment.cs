@@ -8,11 +8,10 @@ namespace RaceApp.Classes
         public string TrackSegment { get; set; }
         public int Length{ get; set; }
         public GroundType Ground { get; set; }
-        RandomGenerator random = new RandomGenerator();
 
         public Segment(string segment, GroundType groundType)
         {
-            int length = random.Generate(25, 100);
+            int length = RandomGenerator.Generate(25, 100);
             TrackSegment = segment;
             Ground = groundType;
             Length = length;

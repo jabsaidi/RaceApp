@@ -10,7 +10,6 @@ namespace RaceApp.Classes
     {
         private List<Driver> drivers = new List<Driver>();
         RaceTrack track = new RaceTrack();
-        RandomGenerator random = new RandomGenerator();
 
         public void Participants()
         {
@@ -21,22 +20,22 @@ namespace RaceApp.Classes
 
             for (int i = 0; i < racers; i++)
             {
-                int type = random.Generate(1, 5);
+                int type = RandomGenerator.Generate(1, 5);
                 if (type == 1)
                 {
-                    drivers.Add(new F1(random.NameGenerator(), "F1", random.Generate(20, 51)));
+                    drivers.Add(new F1(RandomGenerator.NameGenerator(), "F1", RandomGenerator.Generate(20, 51)));
                 }
                 else if (type == 2)
                 {
-                    drivers.Add(new Nascar(random.NameGenerator(), "Nascar", random.Generate(20, 51)));
+                    drivers.Add(new Nascar(RandomGenerator.NameGenerator(), "Nascar", RandomGenerator.Generate(20, 51)));
                 }
                 else if (type == 3)
                 {
-                    drivers.Add(new Rally(random.NameGenerator(), "Rally", random.Generate(20, 51)));
+                    drivers.Add(new Rally(RandomGenerator.NameGenerator(), "Rally", RandomGenerator.Generate(20, 51)));
                 }
                 else
                 {
-                    drivers.Add(new MuscleCar(random.NameGenerator(), "Muscle Car", random.Generate(20, 51)));
+                    drivers.Add(new MuscleCar(RandomGenerator.NameGenerator(), "Muscle Car", RandomGenerator.Generate(20, 51)));
                 }
             }
             Wait(1000);

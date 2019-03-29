@@ -9,20 +9,19 @@ namespace RaceApp.Classes
     public class RaceTrack
     {
         public List<Segment> _segments = new List<Segment>();
-        RandomGenerator _random = new RandomGenerator();
         public Weather Weather { get; private set; }
         public RaceTrack()
         {
-            Weather = _random.WeatherOdds();
+            Weather = RandomGenerator.WeatherOdds();
         }
 
         public List<Segment> RaceSegments()
         {
-            int segmentAmount = _random.Generate(2, 21);
+            int segmentAmount = RandomGenerator.Generate(2, 21);
             for (int i = 0; i < segmentAmount; i++)
             {
-                int groundtype = _random.Generate(1, 3);
-                int turnOrNot = _random.Generate(1, 4);
+                int groundtype = RandomGenerator.Generate(1, 3);
+                int turnOrNot = RandomGenerator.Generate(1, 4);
                 if (groundtype == 1)
                 {
                     if (turnOrNot == 1)

@@ -4,7 +4,6 @@ namespace RaceApp.Classes
 {
     public class MuscleCar : Driver
     {
-        RandomGenerator random = new RandomGenerator();
         public MuscleCar(string name, string car, int performence, int speed = 150) : base(name, car, performence, speed)
         {
         }
@@ -42,17 +41,17 @@ namespace RaceApp.Classes
 
             if (IsCurve(segment.TrackSegment))
             {
-                tempSpeed = currSpeed - random.Generate(10, 20);
+                tempSpeed = currSpeed - RandomGenerator.Generate(10, 20);
                 SegmentTimeCalculator(tempSpeed, segment, driver);
             }
             else if (IsLine(segment.TrackSegment))
             {
-                tempSpeed = currSpeed + random.Generate(20, 60);
+                tempSpeed = currSpeed + RandomGenerator.Generate(20, 60);
                 SegmentTimeCalculator(tempSpeed, segment, driver);
             }
             else if (IsSTurn(segment.TrackSegment))
             {
-                tempSpeed = currSpeed - random.Generate(10, 30);
+                tempSpeed = currSpeed - RandomGenerator.Generate(10, 30);
                 SegmentTimeCalculator(tempSpeed, segment, driver);
             }
         }

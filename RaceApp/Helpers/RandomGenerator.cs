@@ -3,22 +3,20 @@ using System;
 
 namespace RaceApp.Helpers
 {
-    public class RandomGenerator
+    public static class RandomGenerator
     {
-        public Random random = new Random();
-        public int Min { get; set; }
-        public int Max { get; set; }
+        private static Random random = new Random();
 
-        public RandomGenerator()
+        static RandomGenerator()
         {
         }
 
-        public int Generate(int min, int max)
+        public static int Generate(int min, int max)
         {
             return random.Next(min, max);
         }
 
-        public string NameGenerator()
+        public static string NameGenerator()
         {
             string name;
             int nameOptions = Generate(1, 12);
@@ -69,7 +67,7 @@ namespace RaceApp.Helpers
             return name;
         }
 
-        public string EndorserName()
+        public static string EndorserName()
         {
             int maxEndorsers = Generate(1, 6);
             string name;
@@ -97,7 +95,7 @@ namespace RaceApp.Helpers
             return name;
         }
 
-        public Weather WeatherOdds()
+        public static Weather WeatherOdds()
         {
             int weatherOptions = Generate(1, 4);
             var currWeather = Weather.Sun;
